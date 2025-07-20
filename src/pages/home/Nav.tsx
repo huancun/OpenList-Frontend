@@ -123,7 +123,7 @@ export const Nav = () => {
           }}
         </For>
       </Breadcrumb>
-      <Show when={objStore.state == State.Folder}>
+      {/* <Show when={objStore.state == State.Folder}>
         <Text
           css={{
             whiteSpace: "nowrap",
@@ -134,7 +134,7 @@ export const Nav = () => {
           {selectInfo()}
           {folderInfo()}
         </Text>
-      </Show>
+      </Show> */}
     </HStack>
   )
 }

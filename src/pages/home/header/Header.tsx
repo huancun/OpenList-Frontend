@@ -46,14 +46,14 @@ export const Header = () => {
           justifyContent="space-between"
         >
           <HStack class="header-left" h="44px">
-            <Image
+            {/* <Image
               src={logo()!}
               h="$full"
               w="auto"
               fallback={<CenterLoading />}
-            />
+            /> */}
           </HStack>
-          <HStack class="header-right" spacing="$2">
+          {/* <HStack class="header-right" spacing="$2">
             <Show when={objStore.state === State.Folder}>
               <Show when={getSetting("search_index") !== "none"}>
                 <HStack
@@ -82,7 +82,7 @@ export const Header = () => {
               </Show>
               <Layout />
             </Show>
-          </HStack>
+          </HStack> */}
         </HStack>
       </Container>
     </Center>

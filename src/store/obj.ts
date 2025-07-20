@@ -192,14 +192,10 @@ const [_layout, _setLayout] = createSignal<LayoutType>(
   layoutRecord[pathname()] || local["global_default_layout"],
 )
 export const layout = () => {
-  const layout = layoutRecord[pathname()]
-  _setLayout(layout || local["global_default_layout"])
-  return _layout()
+  return "image"
 }
 export const setLayout = (layout: LayoutType) => {
-  layoutRecord[pathname()] = layout
-  localStorage.setItem("layoutRecord", JSON.stringify(layoutRecord))
-  _setLayout(layout)
+  // 强制只使用图片布局，忽略所有布局设置
 }
 
 const [_checkboxOpen, setCheckboxOpen] = createStorageSignal<string>(
