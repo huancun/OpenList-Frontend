@@ -118,7 +118,7 @@ const ListLayout = () => {
   )
 }
 
-function CountMsgText() {
+const CountMsgText = () => {
   return (
     <HStack w="$full" p="$2">
       <Text
